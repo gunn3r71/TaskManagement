@@ -1,7 +1,7 @@
 ﻿using Flunt.Notifications;
 using Flunt.Validations;
 using System;
-using TaskManagement.Shared.Commands;
+using TaskManagement.Shared.Commands.Contracts;
 
 namespace TaskManagement.Domain.Commands
 {
