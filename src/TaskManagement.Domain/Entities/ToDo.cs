@@ -7,12 +7,12 @@ namespace TaskManagement.Domain.Entities
     {
         public ToDo(string title, 
             string description,
-            DateTime startedAt,
+            DateTime? startedAt,
             string user)
         {
             Title = title;
             Description = description;
-            StartedAt = startedAt;
+            StartedAt = startedAt ?? DateTime.UtcNow.AddHours(-3);
             User = user;
         }
 
