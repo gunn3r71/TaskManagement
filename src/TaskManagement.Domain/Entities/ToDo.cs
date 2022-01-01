@@ -40,5 +40,10 @@ namespace TaskManagement.Domain.Entities
             Done = false;
             FinishedAt = null;
         }
+
+        public void UpdateTitle(string title)
+        {
+            Title = title;
+        }
     }
 }
