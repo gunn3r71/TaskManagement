@@ -1,15 +1,16 @@
 ﻿using System;
+using Flunt.Notifications;
 
-namespace TaskManagement.Domain.Entities
+namespace TaskManagement.Shared.Entities
 {
-    public abstract class Entity : IEquatable<Entity>
+    public abstract class Entity : Notifiable, IEquatable<Entity>
     {
         protected Entity()
         {
             Id = Guid.NewGuid();
         }
 
-        public virtual Guid Id  { get; }
+        public Guid Id  { get; }
 
         public bool Equals(Entity other)
         {

@@ -1,15 +1,20 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\TaskManagement.Shared\TaskManagement.Shared.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\TaskManagement.Shared\TaskManagement.Shared.csproj" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Entities\" />
-  </ItemGroup>
+	<ItemGroup>
+		<Folder Include="Entities\" />
+		<Folder Include="Commands\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Flunt" Version="1.0.2" />
+	</ItemGroup>
 
 </Project>
