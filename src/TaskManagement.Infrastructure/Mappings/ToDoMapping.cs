@@ -8,28 +8,31 @@ namespace TaskManagement.Infrastructure.Mappings
     {
         public void Configure(EntityTypeBuilder<ToDo> builder)
         {
+            builder.ToTable(nameof(ToDo));
+
             builder.HasKey(x => x.Id);
+         
             builder
                 .Property(x => x.Id)
                 .HasMaxLength(36)
-                //.HasColumnType("CHAR(36)")
+                .HasColumnType("CHAR(36)")
                 .IsRequired();
 
             builder
                 .Property(x => x.Title)
                 .HasMaxLength(20)
-                //.HasColumnType("VARCHAR(20)")
+                .HasColumnType("VARCHAR(20)")
                 .IsRequired();
 
             builder
                 .Property(x => x.Description)
                 .HasMaxLength(100)
-                //.HasColumnType("VARCHAR(100)")
+                .HasColumnType("VARCHAR(100)")
                 .IsRequired();
 
             builder
                 .Property(x => x.Done)
-                //.HasColumnType("TINYINT")
+                .HasColumnType("TINYINT")
                 .IsRequired();
 
             builder

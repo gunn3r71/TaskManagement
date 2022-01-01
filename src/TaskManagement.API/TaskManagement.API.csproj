@@ -14,4 +14,8 @@
     <ProjectReference Include="..\TaskManagement.Shared\TaskManagement.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Extensions\" />
+  </ItemGroup>
+
 </Project>
